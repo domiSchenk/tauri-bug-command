@@ -11,7 +11,7 @@ function init(value) {
 async function gitCommand() {
     const args = [
         '-C',
-        'D:/_dev/_repotest/branch',
+        'D:/_dev/_git/Playground/tauri-bug',
         'diff',
         '--no-ext-diff',
         '--patch-with-raw',
@@ -19,7 +19,7 @@ async function gitCommand() {
         '--no-index',
         '--',
         '/dev/null',
-        'gugs.md'
+        'test.md'
     ]
     const cmd = new __TAURI__.shell.Command('git', args);
     // cmd.execute();
