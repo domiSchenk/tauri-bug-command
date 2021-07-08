@@ -10,21 +10,14 @@ function init(value) {
 
 async function gitCommand() {
     const args = [
-        '-C',
-        'D:/_dev/_git/Playground/tauri-bug',
-        'diff',
-        '--no-ext-diff',
-        '--patch-with-raw',
-        '--no-color',
-        '--no-index',
-        '--',
-        '/dev/null',
-        'test.md'
+        'show',
+        '1614bd361305d7ba08da119ea9d3240fc9c4cad2',
+        '--no-color'
     ]
     const cmd = new __TAURI__.shell.Command('git', args);
     // cmd.execute();
     const result = await cmd.execute();
-    console.log(result);
+    console.log(result.stdout);
     init(result.stdout)
 }
 
