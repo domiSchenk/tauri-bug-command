@@ -28,13 +28,7 @@ index 0000000..a560784
 ```
 
 Actually returns: 
-```
-:000000 100644 0000000 0000000 A test.md
 
-diff --git a/test.md b/test.md
-new file mode 100644
-index 0000000..a560784
---- /dev/null
 ```
 ```
 :000000 100644 0000000 0000000 A test.md
@@ -46,9 +40,4 @@ index 0000000..a560784
 +++ b/test.md
 ```
 ```
-:000000 100644 0000000 0000000 A test.md
 
-diff --git a/test.md b/test.md
-new file mode 100644
-index 0000000..a560784
-```
